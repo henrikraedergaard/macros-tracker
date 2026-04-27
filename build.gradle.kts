@@ -19,6 +19,9 @@ repositories {
 }
 
 dependencies {
+    // Scalar openapi documentation
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-scalar:2.8.17")
+
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-flyway")
     implementation("org.springframework.boot:spring-boot-starter-security")

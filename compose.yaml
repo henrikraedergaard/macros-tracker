@@ -1,9 +1,9 @@
 services:
   postgres:
-    image: 'postgres:latest'
+    image: postgres:18
     environment:
-      - 'POSTGRES_DB=mydatabase'
-      - 'POSTGRES_PASSWORD=secret'
-      - 'POSTGRES_USER=myuser'
+      POSTGRES_DB: macros_tracker
+      POSTGRES_USER: macros_user
+      POSTGRES_PASSWORD: macros_password
     ports:
-      - '5432'
+      - "5432:5432"

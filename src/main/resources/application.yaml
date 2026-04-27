@@ -1,3 +1,17 @@
 spring:
   application:
     name: macros-tracker
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/macros_tracker
+    username: macros_user
+    password: macros_password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
+  flyway:
+    enabled: true
