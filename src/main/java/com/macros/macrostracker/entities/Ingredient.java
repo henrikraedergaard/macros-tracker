@@ -2,7 +2,12 @@ package com.macros.macrostracker.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.data.annotation.CreatedDate;
 
+import java.time.Instant;
+import java.util.Date;
 import java.util.UUID;
 
 @Entity
@@ -31,4 +36,12 @@ public class Ingredient {
 
     @Column(name = "fat_per_100g", nullable = false)
     private double fatPer100g;
+
+    @Column(nullable = false)
+    @CreationTimestamp
+    private Instant createdAt;
+
+    @Column(nullable = false)
+    @UpdateTimestamp
+    private Instant updatedAt;
 }
