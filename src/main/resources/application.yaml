@@ -2,6 +2,10 @@ spring:
   application:
     name: macros-tracker
 
+  docker:
+    compose:
+      enabled: false
+
   datasource:
     url: jdbc:postgresql://localhost:5432/macros_tracker
     username: macros_user

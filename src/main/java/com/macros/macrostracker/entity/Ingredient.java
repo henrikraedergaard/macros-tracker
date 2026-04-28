@@ -1,13 +1,11 @@
-package com.macros.macrostracker.entities;
+package com.macros.macrostracker.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.springframework.data.annotation.CreatedDate;
 
 import java.time.Instant;
-import java.util.Date;
 import java.util.UUID;
 
 @Entity

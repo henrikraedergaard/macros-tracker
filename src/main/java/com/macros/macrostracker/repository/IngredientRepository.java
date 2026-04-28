@@ -1,6 +1,6 @@
-package com.macros.macrostracker.repositories;
+package com.macros.macrostracker.repository;
 
-import com.macros.macrostracker.entities.Ingredient;
+import com.macros.macrostracker.entity.Ingredient;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

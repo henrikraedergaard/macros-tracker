@@ -1,4 +1,4 @@
-package com.macros.macrostracker.dtos;
+package com.macros.macrostracker.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.PositiveOrZero;
